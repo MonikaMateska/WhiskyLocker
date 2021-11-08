@@ -10,6 +10,7 @@ class AppDependencyContainer {
     
     private(set) var appService: AppService!
     private lazy var apiService = MockService()
+    private lazy var mockService = MockService()
     private weak var window: UIWindow?
     
     init(window: UIWindow?) {
@@ -34,7 +35,8 @@ class AppDependencyContainer {
     /// Creates and returns an LoginCoordinator.
     /// - Returns: `LoginCoordinator`
     func makeLoginCoordinator() -> some LoginCoordinator {
-        return LoginCoordinatorLogic(window: window, loginContainer: makeLoginContainer())
+        return LoginCoordinatorLogic(window: window,
+                                     loginContainer: makeLoginContainer())
     }
     
     func makeRootCoordinator() -> some RootCoordinator {

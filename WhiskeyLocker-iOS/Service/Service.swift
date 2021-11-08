@@ -46,6 +46,66 @@ extension URLRequest {
 }
 
 class MockService: ServiceProtocol {
+    
+    func mockEmployees() -> [EmployeeResponse] {
+        return [EmployeeResponse(id: 1,
+                                 username: "mms",
+                                 firstName: "Monika",
+                                 lastName: "Mateska"),
+                
+                EmployeeResponse(id: 2,
+                                 username: "nve",
+                                 firstName: "Nikola",
+                                 lastName: "Veljanovski")]
+    }
+    
+    func mockLockerResponse() -> [LockerResponse] {
+        return [LockerResponse(id: 1,
+                               code: 1,
+                               status: .unlocked,
+                               shares: [Share(id: 2), Share(id: 3)],
+                               owner: 1),
+                
+                LockerResponse(id: 2,
+                               code: 2,
+                               status: .locked,
+                               shares: [Share(id: 3), Share(id: 4)],
+                               owner: 2)]
+    }
+    
+    func myLockers() -> [MyLockerItem] {
+        return [MyLockerItem(locker: mockLockerResponse().first!,
+                             cabinet: mockCabinets().first!,
+                             owner: mockOwners().first!,
+                             ownership: "")]
+    }
+    
+    func mockCabinets() -> [Cabinet] {
+        return [Cabinet(id: 4,
+                        name: "",
+                        description: ""),
+                
+                Cabinet(id: 2,
+                        name: "",
+                        description: ""),
+                
+                Cabinet(id: 1,
+                        name: "",
+                        description: "")
+        ]
+    }
+    
+    func mockOwners() -> [Owner] {
+        return [Owner(id: 1, username: "nikola", email: "nikola@nca.com",
+                      firstName: "nikola",
+                      lastName: "nikola"),
+                
+                Owner(id: 2, username: "monika", email: "monika@nca.com",
+                      firstName: "monika",
+                      lastName: "monika")
+        ]
+    }
+    
     func shareLocker(withId id: Int, employeeId: Int) async {
         
     }
@@ -63,11 +123,7 @@ class MockService: ServiceProtocol {
     }
     
     func getLocker(byId id: Int) async -> LockerResponse? {
-        return LockerResponse(id: 1,
-                              code: 1,
-                              status: .unlocked,
-                              shares: [Share(id: 2), Share(id: 3)],
-                              owner: 1)
+        return mockLockerResponse().first(where: { $0.id == id })
     }
     
     func myLockers(ownerId: Int) async -> [MyLockerItem] {
@@ -81,10 +137,7 @@ class MockService: ServiceProtocol {
     }
     
     func employeeDetails() async -> EmployeeResponse? {
-        return EmployeeResponse(id: 1,
-                                username: "mms",
-                                firstName: "Monika",
-                                lastName: "Mateska")
+        return mockEmployees().first
     }
     
     func getEmployees(searchText search: String) async -> [Employee] {

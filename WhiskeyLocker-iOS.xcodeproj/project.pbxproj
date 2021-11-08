@@ -1,0 +1,660 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		99514E502735F56A00B00B91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99514E4F2735F56A00B00B91 /* Assets.xcassets */; };
+		99514E532735F56A00B00B91 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99514E522735F56A00B00B91 /* Preview Assets.xcassets */; };
+		99514E6427369D3B00B00B91 /* LockerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99514E6327369D3B00B00B91 /* LockerListView.swift */; };
+		99514E6627369D6E00B00B91 /* LockerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99514E6527369D6E00B00B91 /* LockerListViewModel.swift */; };
+		99514E6B27369FE600B00B91 /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99514E6A27369FE600B00B91 /* CustomSegmentedControl.swift */; };
+		99514E6D2736A57E00B00B91 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99514E6C2736A57E00B00B91 /* DetailsView.swift */; };
+		99514E6F2736DD1700B00B91 /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99514E6E2736DD1700B00B91 /* RootCoordinator.swift */; };
+		99514E712736DD8100B00B91 /* RootDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99514E702736DD8100B00B91 /* RootDependencyContainer.swift */; };
+		99514E73273723B300B00B91 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99514E72273723B300B00B91 /* DetailsViewModel.swift */; };
+		99514E752737697200B00B91 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99514E742737697200B00B91 /* Employee.swift */; };
+		99514E7727376AFB00B00B91 /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99514E7627376AFB00B00B91 /* ShareView.swift */; };
+		99514E7A27376CAD00B00B91 /* ShareViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99514E7927376CAD00B00B91 /* ShareViewModel.swift */; };
+		DCAA84CB273608EA00658718 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA84CA273608EA00658718 /* Service.swift */; };
+		DCAA84D027368C7D00658718 /* Locker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA84CF27368C7D00658718 /* Locker.swift */; };
+		DCAA84D227368C8200658718 /* Cabinet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA84D127368C8200658718 /* Cabinet.swift */; };
+		DCAA84D52736C0CC00658718 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA84D42736C0CC00658718 /* LoginResponse.swift */; };
+		DCAA84D72736D99200658718 /* CabinetsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA84D62736D99200658718 /* CabinetsResponse.swift */; };
+		DCAA84D92736DC1000658718 /* LockerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA84D82736DC1000658718 /* LockerResponse.swift */; };
+		E25F90262738035400F882D1 /* FlashCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F90252738035400F882D1 /* FlashCard.swift */; };
+		E25F902827380BAB00F882D1 /* LoginStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F902727380BAB00F882D1 /* LoginStepView.swift */; };
+		E25F902A27380BC400F882D1 /* RegisterStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F902927380BC400F882D1 /* RegisterStepView.swift */; };
+		E262B0DE2736D8C700DDAED8 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E262B0DD2736D8C700DDAED8 /* ViewModifiers.swift */; };
+		E262B0E02736D8F600DDAED8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E262B0DF2736D8F600DDAED8 /* Extensions.swift */; };
+		E262B0E22736D9E900DDAED8 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E262B0E12736D9E900DDAED8 /* LoginViewModel.swift */; };
+		E262B0E42736DA2200DDAED8 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E262B0E32736DA2200DDAED8 /* ViewModel.swift */; };
+		E262B10D2737228700DDAED8 /* ClaimNewLockerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E262B10C2737228700DDAED8 /* ClaimNewLockerViewModel.swift */; };
+		E262B1102737229B00DDAED8 /* ClaimNewLockerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E262B10F2737229B00DDAED8 /* ClaimNewLockerView.swift */; };
+		E262B1142737268800DDAED8 /* QrCodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E262B1132737268800DDAED8 /* QrCodeScannerView.swift */; };
+		E262B116273726A500DDAED8 /* QrCodeCameraDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E262B115273726A500DDAED8 /* QrCodeCameraDelegate.swift */; };
+		E262B118273726B500DDAED8 /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E262B117273726B500DDAED8 /* CameraPreview.swift */; };
+		E262B1242737767F00DDAED8 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E262B1232737767F00DDAED8 /* SettingsView.swift */; };
+		E262B1262737768700DDAED8 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E262B1252737768700DDAED8 /* SettingsViewModel.swift */; };
+		E2F8FF4B273699CE007F1540 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F8FF4A273699CE007F1540 /* Coordinator.swift */; };
+		E2F8FF4D273699FC007F1540 /* AssociatedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F8FF4C273699FC007F1540 /* AssociatedObject.swift */; };
+		E2F8FF4F27369B9F007F1540 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F8FF4E27369B9F007F1540 /* AppCoordinator.swift */; };
+		E2F8FF5327369C82007F1540 /* AppDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F8FF5227369C82007F1540 /* AppDependencyContainer.swift */; };
+		E2F8FF552736A61E007F1540 /* AppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F8FF542736A61E007F1540 /* AppService.swift */; };
+		E2F8FF592736AB3C007F1540 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F8FF582736AB3C007F1540 /* LoginCoordinator.swift */; };
+		E2F8FF5B2736AB6E007F1540 /* LoginDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F8FF5A2736AB6E007F1540 /* LoginDependencyContainer.swift */; };
+		E2F8FF5F2736ACAA007F1540 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F8FF5E2736ACAA007F1540 /* LoginView.swift */; };
+		E2F8FF612736BC73007F1540 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F8FF602736BC73007F1540 /* SceneDelegate.swift */; };
+		E2F8FF632736BF26007F1540 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F8FF622736BF26007F1540 /* AppDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		99514E482735F56800B00B91 /* WhiskeyLocker-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WhiskeyLocker-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		99514E4F2735F56A00B00B91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		99514E522735F56A00B00B91 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		99514E6327369D3B00B00B91 /* LockerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockerListView.swift; sourceTree = "<group>"; };
+		99514E6527369D6E00B00B91 /* LockerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockerListViewModel.swift; sourceTree = "<group>"; };
+		99514E6A27369FE600B00B91 /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
+		99514E6C2736A57E00B00B91 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		99514E6E2736DD1700B00B91 /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
+		99514E702736DD8100B00B91 /* RootDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootDependencyContainer.swift; sourceTree = "<group>"; };
+		99514E72273723B300B00B91 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
+		99514E742737697200B00B91 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		99514E7627376AFB00B00B91 /* ShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
+		99514E7927376CAD00B00B91 /* ShareViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewModel.swift; sourceTree = "<group>"; };
+		DCAA84CA273608EA00658718 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		DCAA84CF27368C7D00658718 /* Locker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locker.swift; sourceTree = "<group>"; };
+		DCAA84D127368C8200658718 /* Cabinet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cabinet.swift; sourceTree = "<group>"; };
+		DCAA84D42736C0CC00658718 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		DCAA84D62736D99200658718 /* CabinetsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabinetsResponse.swift; sourceTree = "<group>"; };
+		DCAA84D82736DC1000658718 /* LockerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockerResponse.swift; sourceTree = "<group>"; };
+		DCD0E29A27375EB900D38BCE /* WhiskeyLocker-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WhiskeyLocker-iOS.entitlements"; sourceTree = "<group>"; };
+		E25F90252738035400F882D1 /* FlashCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCard.swift; sourceTree = "<group>"; };
+		E25F902727380BAB00F882D1 /* LoginStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginStepView.swift; sourceTree = "<group>"; };
+		E25F902927380BC400F882D1 /* RegisterStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterStepView.swift; sourceTree = "<group>"; };
+		E262B0DD2736D8C700DDAED8 /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
+		E262B0DF2736D8F600DDAED8 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E262B0E12736D9E900DDAED8 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		E262B0E32736DA2200DDAED8 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		E262B10C2737228700DDAED8 /* ClaimNewLockerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaimNewLockerViewModel.swift; sourceTree = "<group>"; };
+		E262B10F2737229B00DDAED8 /* ClaimNewLockerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaimNewLockerView.swift; sourceTree = "<group>"; };
+		E262B1132737268800DDAED8 /* QrCodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeScannerView.swift; sourceTree = "<group>"; };
+		E262B115273726A500DDAED8 /* QrCodeCameraDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeCameraDelegate.swift; sourceTree = "<group>"; };
+		E262B117273726B500DDAED8 /* CameraPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
+		E262B119273726EC00DDAED8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E262B1232737767F00DDAED8 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		E262B1252737768700DDAED8 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		E2F8FF4A273699CE007F1540 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		E2F8FF4C273699FC007F1540 /* AssociatedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssociatedObject.swift; sourceTree = "<group>"; };
+		E2F8FF4E27369B9F007F1540 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		E2F8FF5227369C82007F1540 /* AppDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencyContainer.swift; sourceTree = "<group>"; };
+		E2F8FF542736A61E007F1540 /* AppService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppService.swift; sourceTree = "<group>"; };
+		E2F8FF582736AB3C007F1540 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		E2F8FF5A2736AB6E007F1540 /* LoginDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDependencyContainer.swift; sourceTree = "<group>"; };
+		E2F8FF5E2736ACAA007F1540 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E2F8FF602736BC73007F1540 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E2F8FF622736BF26007F1540 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		99514E452735F56800B00B91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		99514E3F2735F56800B00B91 = {
+			isa = PBXGroup;
+			children = (
+				99514E4A2735F56800B00B91 /* WhiskeyLocker-iOS */,
+				99514E492735F56800B00B91 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		99514E492735F56800B00B91 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99514E482735F56800B00B91 /* WhiskeyLocker-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99514E4A2735F56800B00B91 /* WhiskeyLocker-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				DCD0E29A27375EB900D38BCE /* WhiskeyLocker-iOS.entitlements */,
+				E2F8FF562736AAC2007F1540 /* App */,
+				DCAA84CE27368C7400658718 /* Models */,
+				DCAA84C9273608E000658718 /* Service */,
+				E2F8FF602736BC73007F1540 /* SceneDelegate.swift */,
+				E2F8FF622736BF26007F1540 /* AppDelegate.swift */,
+				E262B0E32736DA2200DDAED8 /* ViewModel.swift */,
+				99514E4F2735F56A00B00B91 /* Assets.xcassets */,
+				E262B119273726EC00DDAED8 /* Info.plist */,
+				99514E512735F56A00B00B91 /* Preview Content */,
+			);
+			path = "WhiskeyLocker-iOS";
+			sourceTree = "<group>";
+		};
+		99514E512735F56A00B00B91 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				99514E522735F56A00B00B91 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		99514E7827376C8000B00B91 /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				99514E7627376AFB00B00B91 /* ShareView.swift */,
+				99514E7927376CAD00B00B91 /* ShareViewModel.swift */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
+		DCAA84C9273608E000658718 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				DCAA84CA273608EA00658718 /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		DCAA84CE27368C7400658718 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DCAA84D32736C0BF00658718 /* Response */,
+				DCAA84CF27368C7D00658718 /* Locker.swift */,
+				DCAA84D127368C8200658718 /* Cabinet.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DCAA84D32736C0BF00658718 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				DCAA84D42736C0CC00658718 /* LoginResponse.swift */,
+				DCAA84D62736D99200658718 /* CabinetsResponse.swift */,
+				DCAA84D82736DC1000658718 /* LockerResponse.swift */,
+				99514E742737697200B00B91 /* Employee.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		E262B0DC2736D8B400DDAED8 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				E2F8FF49273699C1007F1540 /* Navigation */,
+				E262B0DD2736D8C700DDAED8 /* ViewModifiers.swift */,
+				E262B0DF2736D8F600DDAED8 /* Extensions.swift */,
+				E25F90252738035400F882D1 /* FlashCard.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		E262B10B2737226400DDAED8 /* ClaimNewLocker */ = {
+			isa = PBXGroup;
+			children = (
+				E262B1112737260F00DDAED8 /* ViewModel */,
+				E262B1122737265100DDAED8 /* View */,
+			);
+			path = ClaimNewLocker;
+			sourceTree = "<group>";
+		};
+		E262B1112737260F00DDAED8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E262B10C2737228700DDAED8 /* ClaimNewLockerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E262B1122737265100DDAED8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E262B10F2737229B00DDAED8 /* ClaimNewLockerView.swift */,
+				E262B1132737268800DDAED8 /* QrCodeScannerView.swift */,
+				E262B115273726A500DDAED8 /* QrCodeCameraDelegate.swift */,
+				E262B117273726B500DDAED8 /* CameraPreview.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E262B11D273746C200DDAED8 /* Lockers */ = {
+			isa = PBXGroup;
+			children = (
+				E262B11E273746D900DDAED8 /* Details */,
+				99514E6327369D3B00B00B91 /* LockerListView.swift */,
+				99514E6A27369FE600B00B91 /* CustomSegmentedControl.swift */,
+				99514E6527369D6E00B00B91 /* LockerListViewModel.swift */,
+			);
+			path = Lockers;
+			sourceTree = "<group>";
+		};
+		E262B11E273746D900DDAED8 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				99514E6C2736A57E00B00B91 /* DetailsView.swift */,
+				99514E72273723B300B00B91 /* DetailsViewModel.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		E262B1202737764900DDAED8 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				E262B1212737766D00DDAED8 /* ViewModel */,
+				E262B1222737767300DDAED8 /* View */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		E262B1212737766D00DDAED8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E262B1252737768700DDAED8 /* SettingsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E262B1222737767300DDAED8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E262B1232737767F00DDAED8 /* SettingsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E2F8FF49273699C1007F1540 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				E2F8FF4A273699CE007F1540 /* Coordinator.swift */,
+				E2F8FF4C273699FC007F1540 /* AssociatedObject.swift */,
+				E2F8FF4E27369B9F007F1540 /* AppCoordinator.swift */,
+				E2F8FF5227369C82007F1540 /* AppDependencyContainer.swift */,
+				E2F8FF542736A61E007F1540 /* AppService.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		E2F8FF562736AAC2007F1540 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E262B0DC2736D8B400DDAED8 /* Util */,
+				E262B1202737764900DDAED8 /* Settings */,
+				E2F8FF572736AACB007F1540 /* Login */,
+				E262B11D273746C200DDAED8 /* Lockers */,
+				99514E7827376C8000B00B91 /* Share */,
+				E262B10B2737226400DDAED8 /* ClaimNewLocker */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E2F8FF572736AACB007F1540 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E2F8FF5C2736ABC7007F1540 /* ViewModel */,
+				E2F8FF5D2736ABD2007F1540 /* View */,
+				E2F8FF582736AB3C007F1540 /* LoginCoordinator.swift */,
+				99514E6E2736DD1700B00B91 /* RootCoordinator.swift */,
+				E2F8FF5A2736AB6E007F1540 /* LoginDependencyContainer.swift */,
+				99514E702736DD8100B00B91 /* RootDependencyContainer.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		E2F8FF5C2736ABC7007F1540 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E262B0E12736D9E900DDAED8 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E2F8FF5D2736ABD2007F1540 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E2F8FF5E2736ACAA007F1540 /* LoginView.swift */,
+				E25F902727380BAB00F882D1 /* LoginStepView.swift */,
+				E25F902927380BC400F882D1 /* RegisterStepView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		99514E472735F56800B00B91 /* WhiskeyLocker-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99514E562735F56A00B00B91 /* Build configuration list for PBXNativeTarget "WhiskeyLocker-iOS" */;
+			buildPhases = (
+				99514E442735F56800B00B91 /* Sources */,
+				99514E452735F56800B00B91 /* Frameworks */,
+				99514E462735F56800B00B91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WhiskeyLocker-iOS";
+			productName = "WhiskeyLocker-iOS";
+			productReference = 99514E482735F56800B00B91 /* WhiskeyLocker-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		99514E402735F56800B00B91 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					99514E472735F56800B00B91 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 99514E432735F56800B00B91 /* Build configuration list for PBXProject "WhiskeyLocker-iOS" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 99514E3F2735F56800B00B91;
+			productRefGroup = 99514E492735F56800B00B91 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				99514E472735F56800B00B91 /* WhiskeyLocker-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		99514E462735F56800B00B91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99514E532735F56A00B00B91 /* Preview Assets.xcassets in Resources */,
+				99514E502735F56A00B00B91 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		99514E442735F56800B00B91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2F8FF4D273699FC007F1540 /* AssociatedObject.swift in Sources */,
+				DCAA84D227368C8200658718 /* Cabinet.swift in Sources */,
+				E262B116273726A500DDAED8 /* QrCodeCameraDelegate.swift in Sources */,
+				DCAA84D72736D99200658718 /* CabinetsResponse.swift in Sources */,
+				E262B10D2737228700DDAED8 /* ClaimNewLockerViewModel.swift in Sources */,
+				E262B1242737767F00DDAED8 /* SettingsView.swift in Sources */,
+				99514E6D2736A57E00B00B91 /* DetailsView.swift in Sources */,
+				99514E7A27376CAD00B00B91 /* ShareViewModel.swift in Sources */,
+				99514E6627369D6E00B00B91 /* LockerListViewModel.swift in Sources */,
+				99514E6427369D3B00B00B91 /* LockerListView.swift in Sources */,
+				E2F8FF5327369C82007F1540 /* AppDependencyContainer.swift in Sources */,
+				E2F8FF632736BF26007F1540 /* AppDelegate.swift in Sources */,
+				99514E7727376AFB00B00B91 /* ShareView.swift in Sources */,
+				E262B1142737268800DDAED8 /* QrCodeScannerView.swift in Sources */,
+				99514E752737697200B00B91 /* Employee.swift in Sources */,
+				E262B1102737229B00DDAED8 /* ClaimNewLockerView.swift in Sources */,
+				E25F902A27380BC400F882D1 /* RegisterStepView.swift in Sources */,
+				E2F8FF612736BC73007F1540 /* SceneDelegate.swift in Sources */,
+				DCAA84D027368C7D00658718 /* Locker.swift in Sources */,
+				99514E6B27369FE600B00B91 /* CustomSegmentedControl.swift in Sources */,
+				99514E73273723B300B00B91 /* DetailsViewModel.swift in Sources */,
+				DCAA84D92736DC1000658718 /* LockerResponse.swift in Sources */,
+				DCAA84CB273608EA00658718 /* Service.swift in Sources */,
+				E262B1262737768700DDAED8 /* SettingsViewModel.swift in Sources */,
+				DCAA84D52736C0CC00658718 /* LoginResponse.swift in Sources */,
+				E262B0E22736D9E900DDAED8 /* LoginViewModel.swift in Sources */,
+				E2F8FF5B2736AB6E007F1540 /* LoginDependencyContainer.swift in Sources */,
+				E2F8FF592736AB3C007F1540 /* LoginCoordinator.swift in Sources */,
+				E262B0E42736DA2200DDAED8 /* ViewModel.swift in Sources */,
+				E2F8FF5F2736ACAA007F1540 /* LoginView.swift in Sources */,
+				E25F902827380BAB00F882D1 /* LoginStepView.swift in Sources */,
+				E262B0DE2736D8C700DDAED8 /* ViewModifiers.swift in Sources */,
+				E262B118273726B500DDAED8 /* CameraPreview.swift in Sources */,
+				E2F8FF552736A61E007F1540 /* AppService.swift in Sources */,
+				E25F90262738035400F882D1 /* FlashCard.swift in Sources */,
+				E262B0E02736D8F600DDAED8 /* Extensions.swift in Sources */,
+				E2F8FF4F27369B9F007F1540 /* AppCoordinator.swift in Sources */,
+				E2F8FF4B273699CE007F1540 /* Coordinator.swift in Sources */,
+				99514E712736DD8100B00B91 /* RootDependencyContainer.swift in Sources */,
+				99514E6F2736DD1700B00B91 /* RootCoordinator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		99514E542735F56A00B00B91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		99514E552735F56A00B00B91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		99514E572735F56A00B00B91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "WhiskeyLocker-iOS/WhiskeyLocker-iOS.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WhiskeyLocker-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = T8587Z329R;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WhiskeyLocker-iOS/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Locker;
+				INFOPLIST_KEY_NSCameraUsageDescription = "\"Enable camera to scan QR code\"";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swiftUI-Jam.mms";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		99514E582735F56A00B00B91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "WhiskeyLocker-iOS/WhiskeyLocker-iOS.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WhiskeyLocker-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = T8587Z329R;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WhiskeyLocker-iOS/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Locker;
+				INFOPLIST_KEY_NSCameraUsageDescription = "\"Enable camera to scan QR code\"";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swiftUI-Jam.mms";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		99514E432735F56800B00B91 /* Build configuration list for PBXProject "WhiskeyLocker-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99514E542735F56A00B00B91 /* Debug */,
+				99514E552735F56A00B00B91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99514E562735F56A00B00B91 /* Build configuration list for PBXNativeTarget "WhiskeyLocker-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99514E572735F56A00B00B91 /* Debug */,
+				99514E582735F56A00B00B91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 99514E402735F56800B00B91 /* Project object */;
+}
